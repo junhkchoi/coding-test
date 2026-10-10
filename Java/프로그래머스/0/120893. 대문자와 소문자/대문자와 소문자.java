@@ -8,6 +8,7 @@ class Solution {
                 // answer += (my_string.charAt(i)).toLowerCase() + ""; -> 틀린코드
                 // toLowerCase()는 String 타입에 적용가능한 메서드이다.
                 // char 타입엔 Character.toLowerCase(char 타입) 으로 해야함.
+                // 참고로 아스키 코드상 대소문자 차이는 32로 저 메서드 적용안하고 풀어도 됨
             } else if (my_string.charAt(i) >= 'a' && my_string.charAt(i) <= 'z') {
                 answer += Character.toUpperCase(my_string.charAt(i)) + "";
             }
