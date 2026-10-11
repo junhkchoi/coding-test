@@ -1,7 +1,7 @@
 class Solution {
     public int[] solution(String[] intStrs, int k, int s, int l) {
         int idxCnt = 0;
-        
+        // 개선할 수 있을 거 같은데.... arrayList
         for (String str : intStrs) {
             int num = 0;
             str = str.substring(s, s + l);
