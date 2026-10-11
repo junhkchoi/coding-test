@@ -4,6 +4,7 @@ class Solution {
         int startIdx = my_string.length() - n;
         for (int i = startIdx; i < my_string.length(); i++) {
             answer += my_string.charAt(i) + "";
+            // substring이라는 문자열의 부분을 추출하는 메서드가 있는 거 같음 알아보자
         }
         return answer;
     }
