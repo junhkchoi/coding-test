@@ -3,12 +3,13 @@ class Solution {
         for (int i = 0; i < control.length(); i++) {
             char c = control.charAt(i);
 
-            switch (c) {
-                case 'w' -> n += 1;
-                case 's' -> n -= 1;
-                case 'd' -> n += 10;
-                case 'a' -> n -= 10;
-            }
+            n += switch (c) {
+                case 'w' -> 1;
+                case 's' -> -1;
+                case 'd' -> 10;
+                case 'a' -> -10;
+                default -> 0;
+            };
         }
         return n;
     }
