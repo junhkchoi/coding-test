@@ -5,12 +5,9 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         int n = sc.nextInt();
-        String answer = "";
         
         for (int i = 0; i < n; i++) {
-            answer += str;
+            System.out.print(str);
         }
-        
-        System.out.print(answer);
     }
 }
