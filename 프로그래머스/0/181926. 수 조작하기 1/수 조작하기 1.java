@@ -2,7 +2,8 @@ class Solution {
     public int solution(int n, String control) {
         for (int i = 0; i < control.length(); i++) {
             char c = control.charAt(i);
-
+            
+            // 개선된 switch문
             n += switch (c) {
                 case 'w' -> 1;
                 case 's' -> -1;
